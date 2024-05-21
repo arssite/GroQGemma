@@ -23,7 +23,7 @@ st.write("Firstly Click on Embedding to Vectorize the Backend Document So that G
 st.write("Write Queries and press \"Enter\"")
 url="https://github.com/arssite"
 url2="https://www.linkedin.com/in/anmol-r-srivastava"
-st.write("for more [Github]("https://github.com/arssite")")
+st.write("for more [Github](https://github.com/arssite)")
 llm=ChatGroq(groq_api_key=groq_api_key,
              model_name="Llama3-8b-8192")
 
