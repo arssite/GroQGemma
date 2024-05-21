@@ -21,7 +21,9 @@ os.environ["GOOGLE_API_KEY"]='AIzaSyBCCTKy9jm83GbtDUqzJ9dOe6UeBJBf1Zs'
 st.title("Using Gemma Model for Document Q&A")
 st.write("Firstly Click on Embedding to Vectorize the Backend Document So that Gemma Read and Answer Your Queries")
 st.write("Write Queries and press \"Enter\"")
-st.write("for more github.com/arssite")
+url="https://github.com/arssite"
+url2="https://www.linkedin.com/in/anmol-r-srivastava"
+st.markdown("for more [Github]%s",url)
 llm=ChatGroq(groq_api_key=groq_api_key,
              model_name="Llama3-8b-8192")
 
