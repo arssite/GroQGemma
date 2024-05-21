@@ -18,7 +18,7 @@ import os
 groq_api_key='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'
 os.environ["GOOGLE_API_KEY"]='AIzaSyBCCTKy9jm83GbtDUqzJ9dOe6UeBJBf1Zs'
 
-st.title("Gemma Model Document Q&A")
+st.title("Using Gemma Model for Document Q&A")
 
 llm=ChatGroq(groq_api_key=groq_api_key,
              model_name="Llama3-8b-8192")
@@ -50,7 +50,7 @@ def vector_embedding():
 
 
 
-prompt1=st.text_input("Enter Your Question From Doduments")
+prompt1=st.text_input("Put Your Question From USA Census")
 
 
 if st.button("Documents Embedding"):
