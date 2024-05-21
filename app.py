@@ -21,9 +21,8 @@ os.environ["GOOGLE_API_KEY"]='AIzaSyBCCTKy9jm83GbtDUqzJ9dOe6UeBJBf1Zs'
 st.title("Using Gemma Model for Document Q&A")
 st.write("Firstly Click on Embedding to Vectorize the Backend Document So that Gemma Read and Answer Your Queries")
 st.write("Write Queries and press \"Enter\"")
-url="https://github.com/arssite"
-url2="https://www.linkedin.com/in/anmol-r-srivastava"
-st.write("for more [Github](https://github.com/arssite)")
+
+st.write("for more [Github](https://github.com/arssite) [LinkedIn](https://www.linkedin.com/in/anmol-r-srivastava)")
 llm=ChatGroq(groq_api_key=groq_api_key,
              model_name="Llama3-8b-8192")
 
@@ -52,7 +51,7 @@ def vector_embedding():
 
 
 
-if st.button("Documents Embedding"):
+if st.button("Start Embedding"):
     vector_embedding()
     st.write("Vector Store DB Is Ready")
 
