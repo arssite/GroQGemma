@@ -19,10 +19,14 @@ groq_api_key='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'
 os.environ["GOOGLE_API_KEY"]='AIzaSyBCCTKy9jm83GbtDUqzJ9dOe6UeBJBf1Zs'
 
 st.title("Using Gemma Model for Document Q&A")
-st.write("Firstly Click on Embedding to Vectorize the Backend Document So that Gemma Read and Answer Your Queries")
-st.write("Write Queries and press \"Enter\"")
-
+st.write("1\: Firstly Click on Embedding to Vectorize the Backend Document So that Gemma Read and Answer Your Queries")
+st.write("2\: Write Queries and press \"Enter\"")
 st.write("for more [Github](https://github.com/arssite) [LinkedIn](https://www.linkedin.com/in/anmol-r-srivastava)")
+
+st.markdown("""<style>
+#MainMenu {visibility:hidden;}
+footer (visibility: hidden;}
+</style>""",unsafe_allow_html=True)
 llm=ChatGroq(groq_api_key=groq_api_key,
              model_name="Llama3-8b-8192")
 
