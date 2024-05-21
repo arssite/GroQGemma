@@ -50,14 +50,14 @@ def vector_embedding():
 
 
 
-
+if st.button("Documents Embedding"):
+    vector_embedding()
+    st.write("Vector Store DB Is Ready")
 
 prompt1=st.text_input("Put Your Question From USA Census")
 
 
-if st.button("Documents Embedding"):
-    vector_embedding()
-    st.write("Vector Store DB Is Ready")
+
 
 import time
 
